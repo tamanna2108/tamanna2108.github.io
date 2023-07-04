@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="inputArea" class="center-form">
+        <h2>Welcome! Please provide the details:</h2>
+        <input type="number" id="participantNumber" placeholder="Participant Number"><br>
+        <select id="deviceType">
+            <option value="tablet">Tablet</option>
+            <option value="computer">Computer</option>
+        </select><br>
+        <select id="taskNumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select><br>
+        <button id="startTask">Start Task</button>
+    </div>
+    <div id="taskArea" style="display: none;">
+        <div id="numbersArea"></div>
+        <button id="endTask">End Task</button>
+    </div>
+    <div id="resultsArea" class="center-form" style="display: none;">
+    </div>
+    <button id="exportToCSV" style="display: none;">Export to CSV</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
