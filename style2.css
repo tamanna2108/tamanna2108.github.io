@@ -1,0 +1,28 @@
+body {
+    font-family: georgia;
+    text-align: center;
+    background-color: #7f7f7f;
+    color: #bfbfbf;
+  }
+  
+  h1 {
+    margin-top: 30px;
+  }
+  
+  
+  #captcha-container {
+    margin-top: 50px;
+  }
+  
+  .captcha {
+    margin-bottom: 10px;
+    background-color: #7f7f7f;
+    color: #bfbfbf;
+  }
+  
+  #submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
