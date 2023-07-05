@@ -4,18 +4,6 @@ let incorrectSelections = 0;
 let missedSelections = 0;
 let matchingCount = 0;
 
-// Function to redirect to the selected task page
-function redirectToTaskPage() {
-    const selectedTask = taskNumberSelect.value;
-    if (selectedTask === "1") {
-      window.location.href = "index.html";
-    } else if (selectedTask === "2") {
-      window.location.href = "index2.html";
-    }
-  }
-  // Add event listener to the Start Task button
-  startTaskButton.addEventListener("click", redirectToTaskPage);
-
 document.getElementById('startTask').addEventListener('click', function () {
     const participantNumber = document.getElementById('participantNumber').value;
     const deviceType = document.getElementById('deviceType').value;
