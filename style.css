@@ -1,39 +1,39 @@
 body {
-    background-color: #7f7f7f;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color: #bfbfbf;
-    font-size: 12pt;
+  background-color: #7f7f7f;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #bfbfbf;
+  font-size: 12pt;
 }
 
 .center-form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    padding: 20px;
-    background-color: #ffffff;
-    /* Black and white theme */
-    color: #000000;
-    /* Black and white theme */
-    box-shadow: 0 0 10px 0 #000;
-    border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  background-color: #ffffff;
+  /* Black and white theme */
+  color: #000000;
+  /* Black and white theme */
+  box-shadow: 0 0 10px 0 #000;
+  border-radius: 5px;
 }
 
 .numbersRow {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1em;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  cursor: pointer;
 }
 
 .number {
-    padding: 5px;
-    margin-right: 4em;
-    /* Increased horizontal distance between numbers */
+  padding: 5px;
+  margin-right: 4em;
+  /* Increased horizontal distance between numbers */
 }
 
 .selectedRow {
-    background-color: #d3d3d3;
+  background-color: #d3d3d3;
 }
