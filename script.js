@@ -18,8 +18,8 @@ document.getElementById('startTask').addEventListener('click', function () {
 
   sessionStorage.setItem('startTime', Date.now());
 
-  const matchingPairs = 10; // Number of matching pairs
-  const nonMatchingPairs = 10; // Number of non-matching pairs
+  const matchingPairs = 120; // Number of matching pairs
+  const nonMatchingPairs = 20; // Number of non-matching pairs
   const totalPairs = matchingPairs + nonMatchingPairs; // Total number of pairs
 
   let numbersArray = [];
@@ -101,7 +101,7 @@ document.getElementById('endTask').addEventListener('click', function () {
   const endTime = Date.now();
   const startTime = sessionStorage.getItem('startTime');
   const timeTaken = (endTime - startTime) / 1000;
-  const missedSelections = 10 - correctSelections;
+  const missedSelections = 20 - correctSelections;
 
   const participantNumber = sessionStorage.getItem('participantNumber');
   const deviceType = sessionStorage.getItem('deviceType');
