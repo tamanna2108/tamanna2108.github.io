@@ -18,8 +18,8 @@ document.getElementById('startTask').addEventListener('click', function () {
 
   sessionStorage.setItem('startTime', Date.now());
 
-  const matchingPairs = 120; // Number of matching pairs
-  const nonMatchingPairs = 20; // Number of non-matching pairs
+  const matchingPairs = 10; // Number of matching pairs
+  const nonMatchingPairs = 10; // Number of non-matching pairs
   const totalPairs = matchingPairs + nonMatchingPairs; // Total number of pairs
 
   let numbersArray = [];
@@ -101,7 +101,7 @@ document.getElementById('endTask').addEventListener('click', function () {
   const endTime = Date.now();
   const startTime = sessionStorage.getItem('startTime');
   const timeTaken = (endTime - startTime) / 1000;
-  const missedSelections = 20 - correctSelections;
+  const missedSelections = 10 - correctSelections;
 
   const participantNumber = sessionStorage.getItem('participantNumber');
   const deviceType = sessionStorage.getItem('deviceType');
@@ -113,18 +113,14 @@ document.getElementById('endTask').addEventListener('click', function () {
   sessionStorage.setItem('missedSelections', missedSelections);
 
   document.getElementById('resultsArea').innerHTML = `
-        <h2>Thank you for taking test!!</h2>
-        Participant Number: ${participantNumber}<br>
-        Device Type: ${deviceType}<br>
-        Task Number: ${taskNumber}<br>
-        Time Taken: ${timeTaken} seconds`;
+        <h2>Thank you for taking test!!</h2>`;
 
   document.getElementById('taskArea').style.display = 'none';
   document.getElementById('resultsArea').style.display = 'block';
   
   var data = [
-        ['Correct Selections', 'Incorrect Selections', 'Missed Selections'],
-        [correctSelections, incorrectSelections, missedSelections]
+        ['Correct Selections', 'Incorrect Selections', 'Missed Selections', 'Participant Number', 'Device Type', 'Task Number', 'Time Taken'],
+        [correctSelections, incorrectSelections, missedSelections, participantNumber, deviceType, taskNumber, timeTaken]
       ];
 
       var csvContent = 'data:text/csv;charset=utf-8,';
